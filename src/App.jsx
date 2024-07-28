@@ -1,9 +1,15 @@
 import "./styles/App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <h1>TEST</h1>
+      <div className="contentContainer">
+        <Navbar />
+        <div className="content">
+          <h1>Blog Content</h1>
+        </div>
+      </div>
     </>
   );
 }
