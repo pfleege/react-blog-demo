@@ -64,3 +64,8 @@ a {
   font-size: 1.5em;
   padding: 10px;
 }
+
+.notFound > img {
+  border-radius: 10px 160px;
+  box-shadow: 5px 15px 10px #1b002a;
+}
