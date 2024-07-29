@@ -1,8 +1,14 @@
-const BlogList = () => {
+const BlogList = ({ blogs }) => {
   return (
-    <div className="blogList">
-      <h2>Blog Title</h2>
-      <p>Blog Text</p>
+    <div className="blog-list">
+      {blogs.map((blog) => {
+        return (
+          <div className="blogPreview" key={blog.id}>
+            <h2>{blog.title}</h2>
+            <p>{blog.author}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };

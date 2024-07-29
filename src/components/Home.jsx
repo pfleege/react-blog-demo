@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
@@ -15,11 +16,7 @@ const Home = () => {
       });
   }, []);
 
-  return (
-    <div className="home">
-      <h2>Homepage</h2>
-    </div>
-  );
+  return <div className="home">{blogs && <BlogList blogs={blogs} />}</div>;
 };
 
 export default Home;
