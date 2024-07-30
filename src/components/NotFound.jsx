@@ -1,11 +1,13 @@
-import notFoundImg from "../images/resourceNotFound.jpg";
+import notFoundImg from "../images/questionMark.png";
 
 const NotFound = () => {
   return (
     <div className="notFound">
-      <h2>Sorry! Despite thorough searching...</h2>
+      <h2>
+        Say <q>what</q>, one more time...
+      </h2>
       <img src={notFoundImg} alt="" />
-      <p>...I came up with a whole lot of nothing...</p>
+      <p>...i dare you...</p>
     </div>
   );
 };
