@@ -1,7 +1,6 @@
 import "./styles/App.css";
 import Navbar from "./components/Navbar";
-/* import Home from "./components/Home"; */
-import NotFound from "./components/NotFound";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -9,8 +8,7 @@ function App() {
       <div className="contentContainer">
         <Navbar />
         <div className="content">
-          {/* <Home /> */}
-          <NotFound />
+          <Home />
         </div>
       </div>
     </>

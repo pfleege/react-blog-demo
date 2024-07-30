@@ -51,7 +51,12 @@ h1 {
   max-width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: #aaa;
+  background-image: url("../images/steelBallBkg.jpg");
+  background-repeat: repeat;
+  background-size: 10px;
+  margin: 10px 0 30px;
+  border-top: 5px solid #ddd;
+  border-bottom: 5px solid #bbb;
 }
 
 img.navLogo {
@@ -75,7 +80,44 @@ a {
   padding: 10px;
 }
 
-.notFound {
+.blogList {
+  width: 80vw;
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background-color: rgba(86, 86, 86, 0.7);
+  box-shadow: 1px 1px 10px rgba(200, 12, 200, 0.7);
+}
+
+.blogPreview {
+  width: 100%;
+}
+
+.notFound,
+.blogPreview > h2 {
   font-family: "DarlothesGrunge";
   color: #fff;
+}
+
+.blogPreview > p {
+  color: #fff;
+}
+
+.blogPreview > h2 {
+  padding-top: 20px;
+}
+
+.blogPreview > p {
+  padding: 5px 20px;
+}
+
+.blogPreview p:last-of-type {
+  padding: 0px 20px 40px 20px;
+}
+
+.blogPreview:hover {
+  background-color: rgba(86, 86, 86, 0.9);
+  box-shadow: 1px 1px 10px rgba(247, 17, 247, 0.962);
+  border-radius: 20px;
+  cursor: pointer;
 }

@@ -1,11 +1,16 @@
 const BlogList = ({ blogs }) => {
   return (
-    <div className="blog-list">
+    <div className="blogList">
       {blogs.map((blog) => {
         return (
           <div className="blogPreview" key={blog.id}>
             <h2>{blog.title}</h2>
-            <p>{blog.author}</p>
+            <p>
+              <small>{blog.author}</small>
+            </p>
+            <p>
+              <q>{blog.blogText.slice(0, 100)}...</q>
+            </p>
           </div>
         );
       })}
