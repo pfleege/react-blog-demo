@@ -26,7 +26,6 @@
 }
 
 body {
-  /* width: 100vw; */
   min-height: 100vh;
   text-align: center;
   background-image: url("../images/background.jpg");
@@ -36,10 +35,6 @@ body {
 
 #root {
   width: 100vw;
-  /* text-align: center;
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 h1 {
@@ -92,7 +87,7 @@ img.navLogo {
   justify-content: space-between;
 }
 
-a {
+.links a {
   font-family: "LemonTuesday";
   font-size: 1.5em;
   padding: 10px;
