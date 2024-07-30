@@ -1,4 +1,5 @@
 import Logo from "../images/bannerLogoVintage.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -6,8 +7,8 @@ const Navbar = () => {
       <img className="navLogo" src={Logo} alt="Blog page logo" />
       <h1>Samuel L. Blogson</h1>
       <div className="links">
-        <a href="/">Home</a>
-        <a href="/create">Add Blog</a>
+        <Link to="/">Home</Link>
+        <Link to="/creLinkte">Add Blog</Link>
       </div>
     </nav>
   );
