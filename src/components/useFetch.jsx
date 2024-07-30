@@ -6,9 +6,12 @@ const useFetch = (url) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Add abort controller
+    const abortController = new AbortController();
+
     // Simulate data loading delay
     setTimeout(() => {
-      fetch(url)
+      fetch(url, { signal: abortController.signal })
         .then((res) => {
           if (!res.ok) {
             throw Error("Resource could not be located...");
@@ -21,10 +24,15 @@ const useFetch = (url) => {
           setError(null);
         })
         .catch((err) => {
-          setError(err.message);
-          setIsLoading(false);
+          if (err !== "AbortError") {
+            setError(err.message);
+            setIsLoading(false);
+          }
         });
     }, 1000);
+
+    // Fire abort controller when fetch is interrupted
+    return () => abortController.abort();
   }, [url]);
 
   return { data, isLoading, error };
