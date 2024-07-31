@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddBlog from "./components/AddBlog";
 import IndividualBlog from "./components/IndividualBlog";
 import NotFound from "./components/NotFound";
+import Footnote from "./components/Footnote";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
+        <Footnote />
       </div>
     </BrowserRouter>
   );

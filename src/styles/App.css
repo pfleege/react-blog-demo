@@ -213,3 +213,21 @@ article > p:last-of-type {
   border-radius: 20px;
   cursor: pointer;
 }
+
+.ics-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.icsLogo {
+  height: 25px;
+}
+
+.ics-p {
+  font-style: italic;
+}
