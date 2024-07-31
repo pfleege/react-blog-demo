@@ -153,6 +153,20 @@ form > button.disabled:hover {
   box-shadow: 1px 1px 10px rgba(212, 212, 212, 0.7);
 }
 
+.deleteBlog {
+  color: black;
+  background-color: white;
+  box-shadow: 0px 2px 15px rgba(255, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.deleteBlog:hover {
+  color: #fff;
+  background-color: red;
+  border: 2px solid red;
+  box-shadow: 0px 2px 35px rgba(255, 0, 0, 0.7);
+}
+
 .blogPreview {
   width: 100%;
 }
