@@ -145,6 +145,14 @@ form > button:hover {
   background-color: darkmagenta;
 }
 
+form > button.disabled,
+form > button.disabled:hover {
+  max-width: 150px;
+  margin: 20px auto 50px;
+  background-color: #bbb;
+  box-shadow: 1px 1px 10px rgba(212, 212, 212, 0.7);
+}
+
 .blogPreview {
   width: 100%;
 }
