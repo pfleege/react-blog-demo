@@ -1,4 +1,5 @@
 import notFoundImg from "../images/questionMark.png";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -8,6 +9,9 @@ const NotFound = () => {
       </h2>
       <img src={notFoundImg} alt="" />
       <p>...i dare you...</p>
+      <div className="goToHomePage">
+        <Link to="/">Back to list...</Link>
+      </div>
     </div>
   );
 };

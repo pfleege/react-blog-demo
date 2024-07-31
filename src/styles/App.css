@@ -171,6 +171,18 @@ form > button.disabled:hover {
   width: 100%;
 }
 
+.notFound {
+  margin: 320px auto 30px;
+}
+
+.notFound h2 {
+  font-size: 3em;
+}
+
+.notFound p {
+  font-size: 2em;
+}
+
 .notFound,
 .blogPreview h2,
 .blogTemplate h2,
