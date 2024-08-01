@@ -230,4 +230,5 @@ article > p:last-of-type {
 
 .ics-p {
   font-style: italic;
+  align-self: self-start;
 }

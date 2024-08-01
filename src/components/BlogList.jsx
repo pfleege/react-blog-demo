@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ResetList from "./ResetList";
 
 const BlogList = ({ blogs }) => {
   return (
@@ -18,6 +19,7 @@ const BlogList = ({ blogs }) => {
           </div>
         );
       })}
+      <button onClick={ResetList}>Reset</button>
     </div>
   );
 };
