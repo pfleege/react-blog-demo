@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ResetList from "./ResetList";
 
 const BlogList = ({ blogs }) => {
+  // console.log(`Inside BlogList: ${blogs}`);
   return (
     <div className="blogList">
       {blogs.map((blog) => {

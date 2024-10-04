@@ -1,15 +1,18 @@
 import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
-const Home = () => {
+const Start = () => {
   const {
     data: blogs,
     isLoading,
     error,
   } = useFetch("http://localhost:8000/blogs");
 
-  // const localData = localStorage.getItem("blogs");
-  // console.log(`Inside Home: ${localData}`);
+  /*   let blogs = [];
+
+  setTimeout(() => {
+    blogs = [...data];
+  }, 500); */
 
   return (
     <div className="home">
@@ -20,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Start;

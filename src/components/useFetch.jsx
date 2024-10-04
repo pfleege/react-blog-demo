@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
+  // let data;
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -20,6 +21,7 @@ const useFetch = (url) => {
         })
         .then((data) => {
           setData(data);
+          localStorage.setItem("blogs", JSON.stringify(data));
           setIsLoading(false);
           setError(null);
         })

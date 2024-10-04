@@ -1,18 +1,18 @@
 /* import { useEffect } from "react"; */
 
 const ResetList = () => {
-  fetch("../src/data/blogData.json", {
+  fetch("../src/data/blogs-backup.json", {
     headers: {
       "Content-Type": "application/json",
       Accept: "application/json",
     },
   })
     .then(function (response) {
-      /* console.log(response); */
+      console.log(response);
       return response.json();
     })
     .then(function (myJson) {
-      console.log(myJson.blogs[0]);
+      console.log(myJson);
     });
 
   /* // Fetch each remaining id in json -file

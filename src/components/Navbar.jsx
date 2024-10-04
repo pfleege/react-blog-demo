@@ -1,5 +1,6 @@
 import Logo from "../images/bannerLogoVintage.png";
 import { Link } from "react-router-dom";
+import ResetList from "./ResetList";
 
 const Navbar = () => {
   return (
@@ -10,6 +11,7 @@ const Navbar = () => {
         <Link to="/">Home</Link>
         <Link to="/create">Add Blog</Link>
       </div>
+      <button onClick={ResetList}>Reset</button>
     </nav>
   );
 };
